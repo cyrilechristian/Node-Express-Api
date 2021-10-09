@@ -1,0 +1,27 @@
+{
+  "name": "NODE_EXPRESS_API",
+  "version": "1.0.0",
+  "description": "Starter NodeJS-Express REST API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyrilechristian/Node-Express-Api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyrilechristian/Node-Express-Api/issues"
+  },
+  "homepage": "https://github.com/cyrilechristian/Node-Express-Api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
