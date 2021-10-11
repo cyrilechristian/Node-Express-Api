@@ -1,20 +1,23 @@
 import express from "express";
 
+// local
+import { getUsers, createUser, getUser, deleteUser, patchUser } from '../controlers/users.js';
+
 const router = express.Router();
 
-// Data - local DB
-import users from "../DB/data.js";
-
 // Default GET Route
-router.get("/", (req, res) => {
-    res.send(users);
-});
+router.get("/", getUsers);
 
 // Default POST Route
-router.post("/", (req, res) => {
-    const user = req.body;
-    users.push(user);
-    res.send("POST route");
-});
+router.post("/", createUser);
+
+// Get a Single User
+router.get("/:id", getUser);
+
+// Remove a Specified User
+router.delete("/:id", deleteUser);
+
+// Modify a Specified User Details
+router.patch("/:id", patchUser);
 
 export default router;
